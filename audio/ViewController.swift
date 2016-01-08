@@ -241,68 +241,68 @@ class ViewController: UIViewController, EZMicrophoneDelegate, EZRecorderDelegate
     
     
     
-//    func combineTwoFile(session:Int){
-//        
-//        
-//        
-//        var composition = AVMutableComposition()
-//        var compositionAudioTrack1:AVMutableCompositionTrack = composition.addMutableTrackWithMediaType(AVMediaTypeAudio, preferredTrackID: CMPersistentTrackID())
-//        var compositionAudioTrack2:AVMutableCompositionTrack = composition.addMutableTrackWithMediaType(AVMediaTypeAudio, preferredTrackID: CMPersistentTrackID())
-//        
-//        //create new file to receive data
-//        
-//        let path1 = NSSearchPathForDirectoriesInDomains(
-//            .DocumentDirectory, .UserDomainMask, true
-//            ).first
-//        
-//        
-//        var documentDirectoryURL =  NSURL.fileURLWithPath(path1! + "/resultmerge.wav")
-//        
-//        
-//        
-//        
-//        let orginalFile = NSURL.fileURLWithPath(path1! + "/EZAudioTest_0.m4a")
-//        let currentFile = NSURL.fileURLWithPath(path1! + "/EZAudioTest_"+session.description+".m4a")
-//        
-//        
-//        
-//        
-//        let avAsset1: AVURLAsset = AVURLAsset(URL: orginalFile, options: nil)
-//        let avAsset2: AVURLAsset = AVURLAsset(URL: currentFile, options: nil)
-//        
-//        var tracks1 =  avAsset1.tracksWithMediaType(AVMediaTypeAudio)
-//        var tracks2 =  avAsset2.tracksWithMediaType(AVMediaTypeAudio)
-//        
-//        let assetTrack1:AVAssetTrack = tracks1[0]
-//        let assetTrack2:AVAssetTrack = tracks2[0]
-//        
-//        let duration1: CMTime = assetTrack1.timeRange.duration
-//        let duration2: CMTime = assetTrack2.timeRange.duration
-//        
-//        let timeRange1 = CMTimeRangeMake(kCMTimeZero, duration1)
-//        let timeRange2 = CMTimeRangeMake(duration1, duration2)
-//        
-//        
-//        _ = try? compositionAudioTrack1.insertTimeRange(timeRange1, ofTrack: assetTrack1, atTime: kCMTimeZero)
-//        _ = try?  compositionAudioTrack1.insertTimeRange(timeRange2, ofTrack: assetTrack2, atTime: duration1)
-//        
-//        
-//        //AVAssetExportPresetPassthrough => concatenation
-//        let assetExport = AVAssetExportSession(asset: composition, presetName: AVAssetExportPresetAppleM4A)
-//        assetExport!.outputFileType = AVFileTypeAppleM4A
-//        assetExport!.outputURL = documentDirectoryURL
-//        assetExport!.exportAsynchronouslyWithCompletionHandler({
-//            switch assetExport!.status{
-//            case  AVAssetExportSessionStatus.Failed:
-//                print("failed \(assetExport!.error)")
-//            case AVAssetExportSessionStatus.Cancelled:
-//                print("cancelled \(assetExport!.error)")
-//            default:
-//                print("complete")
-//            }
-//        })
-//        
-//    }
+    //    func combineTwoFile(session:Int){
+    //
+    //
+    //
+    //        var composition = AVMutableComposition()
+    //        var compositionAudioTrack1:AVMutableCompositionTrack = composition.addMutableTrackWithMediaType(AVMediaTypeAudio, preferredTrackID: CMPersistentTrackID())
+    //        var compositionAudioTrack2:AVMutableCompositionTrack = composition.addMutableTrackWithMediaType(AVMediaTypeAudio, preferredTrackID: CMPersistentTrackID())
+    //
+    //        //create new file to receive data
+    //
+    //        let path1 = NSSearchPathForDirectoriesInDomains(
+    //            .DocumentDirectory, .UserDomainMask, true
+    //            ).first
+    //
+    //
+    //        var documentDirectoryURL =  NSURL.fileURLWithPath(path1! + "/resultmerge.wav")
+    //
+    //
+    //
+    //
+    //        let orginalFile = NSURL.fileURLWithPath(path1! + "/EZAudioTest_0.m4a")
+    //        let currentFile = NSURL.fileURLWithPath(path1! + "/EZAudioTest_"+session.description+".m4a")
+    //
+    //
+    //
+    //
+    //        let avAsset1: AVURLAsset = AVURLAsset(URL: orginalFile, options: nil)
+    //        let avAsset2: AVURLAsset = AVURLAsset(URL: currentFile, options: nil)
+    //
+    //        var tracks1 =  avAsset1.tracksWithMediaType(AVMediaTypeAudio)
+    //        var tracks2 =  avAsset2.tracksWithMediaType(AVMediaTypeAudio)
+    //
+    //        let assetTrack1:AVAssetTrack = tracks1[0]
+    //        let assetTrack2:AVAssetTrack = tracks2[0]
+    //
+    //        let duration1: CMTime = assetTrack1.timeRange.duration
+    //        let duration2: CMTime = assetTrack2.timeRange.duration
+    //
+    //        let timeRange1 = CMTimeRangeMake(kCMTimeZero, duration1)
+    //        let timeRange2 = CMTimeRangeMake(duration1, duration2)
+    //
+    //
+    //        _ = try? compositionAudioTrack1.insertTimeRange(timeRange1, ofTrack: assetTrack1, atTime: kCMTimeZero)
+    //        _ = try?  compositionAudioTrack1.insertTimeRange(timeRange2, ofTrack: assetTrack2, atTime: duration1)
+    //
+    //
+    //        //AVAssetExportPresetPassthrough => concatenation
+    //        let assetExport = AVAssetExportSession(asset: composition, presetName: AVAssetExportPresetAppleM4A)
+    //        assetExport!.outputFileType = AVFileTypeAppleM4A
+    //        assetExport!.outputURL = documentDirectoryURL
+    //        assetExport!.exportAsynchronouslyWithCompletionHandler({
+    //            switch assetExport!.status{
+    //            case  AVAssetExportSessionStatus.Failed:
+    //                print("failed \(assetExport!.error)")
+    //            case AVAssetExportSessionStatus.Cancelled:
+    //                print("cancelled \(assetExport!.error)")
+    //            default:
+    //                print("complete")
+    //            }
+    //        })
+    //
+    //    }
     
     
     //    func combineTwoFile(session:Int) {

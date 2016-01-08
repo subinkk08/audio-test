@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>EZAudio.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FileKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,12 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A065AE49C9E63F308170DB1B8FA6DC6C</key>
+		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D8019B69503A8C7C1C3C42EE970144E3</key>
+		<key>778845E44708D0DFB00DF25087801B05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>80FD0749C5E2B0254BA3F622D7F0ED03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A065AE49C9E63F308170DB1B8FA6DC6C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
